@@ -1,0 +1,5 @@
+*.html
+Makefile.target
+
+_book/
+node_modules/
