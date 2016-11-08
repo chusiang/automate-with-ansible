@@ -10,9 +10,13 @@ Ansible 是個與 Puppet, Salt, Chef 並駕齊驅的 Infrastructure as Code 組�
 
 ## 誌謝
 
-- William Yeh (@william_yeh).
-- Max Huang (@sakanamax).
-- Ansible Taiwan User Group.
+- William Yeh ([@william_yeh][william_yeh]).
+- Max Huang ([@sakanamax][sakanamax]).
+- [Ansible 台灣使用者社群][ansible-tw] (Ansible Taiwan User Group) 的各位伙伴。
 
 
 [^1]: 此為第 8 屆 iThome IT 鐵人賽 DevOps 組參選作品之一。 
+
+[william_yeh]: https://twitter.com/william_yeh
+[sakanamax]: https://twitter.com/sakanamax
+[ansible-tw]: http://ansible.tw/
