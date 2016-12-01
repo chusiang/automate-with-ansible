@@ -10,7 +10,7 @@ OS_NAME := $(shell uname)
 
 include  Makefile.target
 
-.PHONY: main html cp2clipboard install build pdf epub mobi update review push clean
+.PHONY: main html cp2clipboard install build pdf epub mobi update review push clean rename_jpg
 
 main: build review
 
@@ -70,3 +70,5 @@ server:
 clean:
 	-rm -rf tmp.html _book/ _books/ book.pdf book.epub book.mobi
 
+rename_jpg:
+	-rename 's/jpeg/jpg/' imgs/*.jpeg

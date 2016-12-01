@@ -6,13 +6,17 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 
 ## 目錄
 
-> to be continued ...
+1. [前言](01.intro.md)
+
+  > to be continued ...
 
 ## 誌謝
 
 - William Yeh ([@william_yeh][william_yeh]).
 - Max Huang ([@sakanamax][sakanamax]).
 - [Ansible 台灣使用者社群][ansible-tw] (Ansible Taiwan User Group) 的各位伙伴。
+
+> to be continued ...
 
 
 [^1]: 此為第 8 屆 iThome IT 鐵人賽 [DevOps 組][devops_team]參選作品之一，其報名時間為 2016-11-18 02:02:56。
