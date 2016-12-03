@@ -15,6 +15,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 
 1. [前言](01.intro.md)
 1. [Ansible 是什麼？](02.what-is-the-ansible.md)
+1. [怎麼部署 Ansible 環境？](03.how-to-deploy-ansible.md)
 
   > to be continued ...
 
