@@ -1,5 +1,9 @@
 *.html
 Makefile.target
 
+# Vagrant
+.vagrant/
+
+# GitBook
 _book/
 node_modules/
