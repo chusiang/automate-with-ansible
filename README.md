@@ -18,6 +18,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [怎麼部署 Ansible 環境？](03.how-to-deploy-ansible.md)
 1. [怎麼用 Vagrant 練習 Ansible？](04.how-to-practive-ansible-with-vagrant.md)
 1. [怎麼用 Docker 練習 Ansible？](05.how-to-practive-ansible-with-docker.md)
+1. [怎麼操作 Ansible？](06.how-to-use-ansible.md)
 
   > to be continued ...
 
