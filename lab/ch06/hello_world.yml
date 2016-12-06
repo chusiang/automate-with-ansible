@@ -1,0 +1,24 @@
+#!/usr/bin/env ansible-playbook
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: hello_world.yml
+#  Modified: 2016-12-03 21:38
+#  Description: A sample demo of ansible-playbook.
+# =========================================================== 
+
+---
+
+- name: say 'hello world'
+  hosts: all
+  tasks:
+
+    - name: echo 'hello world'
+      command: echo 'hello world'
+      register: result
+
+    - name: print stdout
+      debug:
+        msg: "{{ result.stdout }}"
+
+# vim: ft=ansible :

@@ -1,0 +1,26 @@
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: example.yml
+#  Modified: 2016-12-06 20:12
+#  Description: A sample demo for ch06.
+# =========================================================== 
+--- 
+
+- name: This is a Super-basic playbook.
+  hosts: all 
+  tasks: 
+    - name: Hello World 
+      command: echo "Hello World"
+
+    - name: Install Vim & Emacs 
+      become: yes 
+      apt: name={{ item }} state=present 
+      with_items: 
+        - vim 
+        - emacs 
+
+    # 去去，emacs 走。
+    - name: use vi-mode in readline
+      become: yes
+      lineinfile: dest=/etc/inputrc line="set editing-mode vi"
