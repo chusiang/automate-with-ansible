@@ -19,8 +19,8 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [怎麼用 Vagrant 練習 Ansible？](04.how-to-practive-ansible-with-vagrant.md)
 1. [怎麼用 Docker 練習 Ansible？](05.how-to-practive-ansible-with-docker.md)
 1. [怎麼操作 Ansible？](06.how-to-use-ansible.md)
-1. [怎麼用 Jupyter 操控 Ansible？(1/3)](07.how-to-practive-ansible-with-jupyter1.md)
-1. [怎麼用 Jupyter 操控 Ansible？(2/3)](08.how-to-practive-ansible-with-jupyter2.md)
+1. [怎麼用 Jupyter 操控 Ansible？(localhost)](07.how-to-practive-ansible-with-jupyter1.md)
+1. [怎麼用 Jupyter 操控 Ansible？(Managed node)](08.how-to-practive-ansible-with-jupyter2.md)
 
   > to be continued ...
 
