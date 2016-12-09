@@ -21,7 +21,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [怎麼操作 Ansible？](06.how-to-use-ansible.md)
 1. [怎麼用 Jupyter 操控 Ansible？(localhost)](07.how-to-practive-ansible-with-jupyter1.md)
 1. [怎麼用 Jupyter 操控 Ansible？(Managed node)](08.how-to-practive-ansible-with-jupyter2.md)
-1. [怎麼用 Docker Compose 簡化 Docker 容器的建置流程？](09.how-to-build-docker-container-with-docker-compose.md)
+1. [怎麼用 Docker Compose 練習 Ansible？](09.how-to-practive-ansible-with-docker-compose.md)
 
   > to be continued ...
 
