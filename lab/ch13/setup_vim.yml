@@ -1,0 +1,25 @@
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: setup_vim.yml
+#  Modified: 2016-12-13 22:48
+#  Description: Install vim on multi-linux distribution.
+# ============================================================
+---
+
+- name: Setup the vim
+  hosts: all
+  become: true
+  tasks:
+
+    # Debian, Ubuntu.
+    - name: install apt packages
+      apt: name=vim state=present
+      when: ansible_pkg_mgr == "apt"
+
+    # CentOS.
+    - name: install yum packages
+      yum: name=vim-minimal state=present
+      when: ansible_pkg_mgr == "yum"
+
+# vim:ft=ansible :

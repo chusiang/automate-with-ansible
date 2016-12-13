@@ -25,7 +25,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [Ansible 的開發工具有哪些？](10.which-are-the-ansible-developer-tools.md)
 1. [怎麼看 Ansible Modules 文件？](11.how-to-see-the-ansible-module-document.md)
 1. [常用的 Ansible Module 有哪些？](12.which-are-the-commonly-used-modules.md)
-
+1. [怎麼使用 setup 取得 Managed node 的 facts？](13.how-to-get-the-managed-node-facts-with-setup.md)
 
 > to be continued ...
 
