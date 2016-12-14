@@ -1,0 +1,29 @@
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: template_demo.yml
+#  Modified: 2016-12-14 21:48
+#  Description: A sample demo for ansible template module.
+# ============================================================
+---
+
+- name: Play the template module
+  hosts: localhost
+  vars:
+    dynamic_word: "World"
+
+  tasks:
+    - name: generation the hello_world.txt file
+      template:
+        src: hello_world.txt.j2
+        dest: /tmp/hello_world.txt
+
+    - name: show file context
+      command: cat /tmp/hello_world.txt
+      register: result
+
+    - name: print stdout
+      debug:
+        msg: "{{ result.stdout_lines }}"
+
+# vim:ft=ansible :
