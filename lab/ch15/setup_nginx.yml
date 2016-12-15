@@ -1,9 +1,9 @@
 # ============================================================
 #  Author: Chu-Siang Lai / chusiang (at) drx.tw
 #  Blog: http://note.drx.tw
-#  Filename: template_demo.yml
-#  Modified: 2016-12-15 23:28
-#  Description: A sample demo for ansible template module.
+#  Filename: setup_nginx.yml
+#  Modified: 2016-12-16 03:22
+#  Description: A sample demo for handlers.
 # ============================================================
 ---
 
@@ -11,7 +11,7 @@
   hosts: all
   become: true
   vars:
-    username: "chusiang"
+    username: "ironman"
     mail: "chusiang (at) drx.tw"
     blog: "http://note.drx.tw"
 
