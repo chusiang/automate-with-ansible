@@ -1,0 +1,1 @@
+server1  ansible_ssh_host=192.168.1.102  ansible_ssh_port=2221

@@ -1,0 +1,70 @@
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: setup_nginx.yml
+#  Modified: 2016-12-16 03:22
+#  Description: A sample demo for handlers.
+# ============================================================
+---
+
+- name: setup the nginx
+  hosts: all
+  become: true
+  vars:
+    username: "ironman"
+    mail: "chusiang (at) drx.tw"
+    blog: "http://note.drx.tw"
+
+  tasks:
+    # 執行 'apt-get update' 指令。
+    - name: update apt repo cache
+      apt: name=nginx update_cache=yes
+
+    # 執行 'apt-get install nginx' 指令。
+    - name: install nginx with apt
+      apt: name=nginx state=present
+
+    # 於網頁根目錄 (DocumentRoot) 編輯 index.html。
+    - name: modify index.html
+      template: >
+        src=templates/index.html.j2
+        dest=/usr/share/nginx/html/index.html
+        owner=www-data
+        group=www-data
+        mode="644"
+        backup=yes
+      notify: restart nginx
+
+    # (security) 關閉 server_tokens：移除 server_tokens 前的 '#' 字元。
+    - name: turn server_tokens off
+      lineinfile: >
+        dest=/etc/nginx/nginx.conf
+        regexp="server_tokens off;"
+        insertafter="# server_tokens off;"
+        line="server_tokens off;"
+        state=present
+      notify: restart nginx
+
+  # handlers 
+  #
+  # * 當確認事件有被觸發才會動作。
+  # * 一個 handler 可被多個 task 通知 (notify)，並於 tasks 跑完才會執行。
+  handlers:
+    # 執行 'sudo service nginx restart' 指令。
+    - name: restart nginx
+      service: name=nginx enabled=yes state=restarted
+
+  # post_tasks:
+  #
+  # 在 tasks 之後執行的 tasks。
+  post_tasks:
+    # 檢查網頁內容。
+    - name: review http state
+      command: "curl -s http://localhost"
+      register: web_context
+
+    # 印出檢查結果。
+    - name: print http state
+      debug: msg={{ web_context.stdout_lines }}
+
+# vim:ft=ansible :

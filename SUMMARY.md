@@ -14,4 +14,4 @@
 1. [常用的 Ansible Module 有哪些？](12.which-are-the-commonly-used-modules.md)
 1. [怎麼使用 setup 取得 Managed node 的 facts？](13.how-to-get-the-managed-node-facts-with-setup.md)
 1. [怎麼使用 Ansible 的 Template 系統？](14.how-to-use-the-ansible-template-system.md)
-
+1. [怎麼在 Playbooks 裡使用 Handlers？](15.how-to-use-handlers-in-playbooks.md)
