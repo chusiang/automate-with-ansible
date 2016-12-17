@@ -9,7 +9,7 @@
   ],
   "pluginsConfig": {
     "disqus": {
-      "shortName": "chusiang-automate-with-ansible-books"
+      "shortName": "chusiang-automate-with-ansible"
     },
     "ga": {
       "token": "UA-15084346-6"
