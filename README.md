@@ -29,8 +29,10 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [怎麼使用 Ansible 的 Template 系統？](14.how-to-use-the-ansible-template-system.md)
 1. [怎麼在 Playbooks 裡使用 Handlers？](15.how-to-use-handlers-in-playbooks.md)
 1. [Ansible 如何發送 notification 到 Slack？](16.how-to-send-notification-to-slack-on-ansible.md)
+1. [Ansible 如何發送 notification 到 HipChat？](17.how-to-send-notification-to-hipchat-on-ansible.md)
 
-> to be continued ...
+
+  > to be continued ...
 
 
 ## 誌謝

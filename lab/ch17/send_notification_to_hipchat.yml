@@ -1,0 +1,32 @@
+#!/usr/bin/env ansible-playbook
+# ============================================================
+#  Author: Chu-Siang Lai / chusiang (at) drx.tw
+#  Blog: http://note.drx.tw
+#  Filename: send_notification_to_hipchat.yml
+#  Modified: 2016-12-18 00:30
+#  Description: Send a notification to HipChat with Ansible.
+#  Reference:
+#
+#   1. hipchat - Send a message to hipchat. | Ansible Documentation
+#    - http://docs.ansible.com/ansible/hipchat_module.html
+
+# ============================================================
+---
+
+- name: Send notification to HipChat
+  hosts: localhost
+
+  vars:
+    hipchat_token: 'xxxxxxxxxxxxxxxxxxxxxxxx'
+    hipchat_room: "automate-with-ansible"
+
+  post_tasks:
+    - name: send notification to hipchat
+      hipchat:
+        api: "https://api.hipchat.com/v2/"
+        token: "{{ hipchat_token }}"
+        room: "{{ hipchat_room }}"
+        color: gray
+        msg: "Send a notification with Ansible !"
+
+# vim: ft=ansible :
