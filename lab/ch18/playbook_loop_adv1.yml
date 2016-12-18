@@ -1,0 +1,12 @@
+---
+- name: a advanced loop with playbook
+  hosts: localhost
+  tasks:
+    - name: print loop message
+      debug:
+        msg: "Loop {{ item.num }}: {{ item.str }}"
+      with_items:
+        - { num: '0', str: 'automate' }
+        - { num: '1', str: 'with' }
+        - { num: '2', str: 'ansible' }
+

@@ -1,0 +1,13 @@
+---
+
+- name: a basic loop with playbook
+  hosts: localhost
+  tasks:
+    - name: print loop message
+      debug:
+        msg: "Loop {{ item }}"
+      with_items:
+        - 0
+        - 1
+        - 2
+
