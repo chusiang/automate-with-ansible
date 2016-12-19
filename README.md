@@ -45,7 +45,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 
 
 [^1]: 此為第 8 屆 iThome IT 鐵人賽 [DevOps 組][devops_team]參選作品之一，其報名時間為 2016-11-18 02:02:56，將同步發佈於 [GitBook][gitbook] 和 [iT 邦幫忙][ithelp]。
-[^2]: 本書的 GitHub 網址為 https://github.com/chusiang/automate-with-ansible 。
+[^2]: 本書的 GitHub 網址為 [https://github.com/chusiang/automate-with-ansible](https://github.com/chusiang/automate-with-ansible)。
 
 [chusiang]: http://note.drx.tw/
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/3.0/tw/
