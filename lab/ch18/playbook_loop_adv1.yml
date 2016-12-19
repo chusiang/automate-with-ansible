@@ -10,3 +10,4 @@
         - { num: '1', str: 'with' }
         - { num: '2', str: 'ansible' }
 
+# vim: ft=ansible :

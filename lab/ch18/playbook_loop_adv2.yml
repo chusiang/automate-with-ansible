@@ -1,0 +1,15 @@
+---
+- name: a advanced loop with playbook
+  hosts: localhost
+  tasks:
+    - name: create multiple soft link
+      file:
+        src: "~/vcs/4.docs/automate-with-ansible/lab/ch18/{{ item.src }}"
+        dest: "/tmp/{{ item.dest }}"
+        state: link
+      with_items:
+        - { src: 'playbook_loop.yml', dest: 'loop0.yml' }
+        - { src: 'playbook_loop_adv1.yml', dest: 'loop1.yml' }
+        - { src: 'playbook_loop_adv2.yml', dest: 'loop2.yml' }
+
+# vim: ft=ansible :
