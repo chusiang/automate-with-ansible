@@ -33,6 +33,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [如何在 Playbooks 使用 loops？](18.how-to-use-loops-in-playbooks.md)
 1. [如何維護複雜的 Playbooks？](19.how-to-maintain-the-complex-playbooks.md)
 1. [Roles 是什麼？](20.what-is-the-roles.md)
+1. [怎麼使用 Roles？](21.how-to-use-the-roles.md)
 
 
   > to be continued ...
