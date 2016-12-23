@@ -22,4 +22,4 @@
 1. [Roles 是什麼？](20.what-is-the-roles.md)
 1. [怎麼使用 Roles？](21.how-to-use-the-roles.md)
 1. [怎麼用 Roles 部署 LNMP？(上)](22.how-to-setup-lnmp-with-roles-1.md)
-
+1. [怎麼用 Roles 部署 LNMP？(中)](23.how-to-setup-lnmp-with-roles-2.md)
