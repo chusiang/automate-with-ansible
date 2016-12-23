@@ -1,0 +1,18 @@
+---
+# tasks file for testlink
+
+- debug: msg="==> setting for php-fpm"
+
+- name: use php.ini template for web
+  template: >
+    src=templates/php7-fpm.ini.j2 dest=/etc/php/7.0/fpm/php.ini
+    owner=root group=root mode=0644
+  notify: restart php-fpm
+
+- name: use php.ini template for cli
+  template: >
+    src=templates/php7-cli.ini.j2 dest=/etc/php/7.0/cli/php.ini
+    owner=root group=root mode=0644
+  notify: restart php-fpm
+
+# vim:ft=ansible:

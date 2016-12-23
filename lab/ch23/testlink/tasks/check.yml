@@ -1,0 +1,42 @@
+---
+# tasks file for testlink
+
+- debug: msg='==> check process'
+
+# Nginx.
+- name: check nginx process
+  shell: ps -A | grep nginx
+  register: nginx_process
+  ignore_errors: yes
+  tags: debug
+
+- name: print nginx process
+  debug:
+    msg: "{{ nginx_process.stdout_lines }}"
+  tags: debug
+
+# PHP
+- name: check php process
+  shell: ps -A | grep php-fpm
+  register: php_process
+  ignore_errors: yes
+  tags: debug
+
+- name: print php process
+  debug:
+    msg: "{{ php_process.stdout_lines }}"
+  tags: debug
+
+# MySQL
+- name: check mysql server process
+  shell: ps -A | grep mysql
+  register: mysql_process
+  ignore_errors: yes
+  tags: debug
+
+- name: print mysql process
+  debug:
+    msg: "{{ mysql_process.stdout_lines }}"
+  tags: debug
+
+# vim:ft=ansible:
