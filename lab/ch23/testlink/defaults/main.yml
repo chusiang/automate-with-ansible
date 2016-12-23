@@ -1,0 +1,38 @@
+---
+# vars file for testlink
+
+setup_local_database: true
+
+# TestLink
+testlink_tarball_version: '1.9.15'
+testlink_tarball_url: 'http://downloads.sourceforge.net/project/testlink/TestLink%201.9/TestLink%201.9.15/testlink-1.9.15.tar.gz'
+testlink_tarball_md5: 'd5b9a3e93cdfd9c8d9daed7fa4257409'
+testlink_var_path: '/var/testlink'
+testlink_db_name: 'testlinkdb'
+testlink_db_user: 'testlinkdb'
+testlink_db_password: 'cUv4UK6ardC6cMGL'
+testlink_db_host: 'localhost'
+testlink_default_language: 'en_US'
+
+# Nginx
+nginx_user: 'www-data'
+nginx_testlink_path: '/usr/share/nginx/testlink'
+nginx_server_name: 'testlink.example.tw'
+nginx_enable_ssl: false
+
+# PHP-FPM
+php_owner: '{{ nginx_user }}'
+php_group: '{{ nginx_user }}'
+php_max_execution_time: '3000'
+php_session_gc_maxlifetime: '60000'
+
+# MySQL 5.6.x
+#
+# - TestLink 1.9.15 need mysql-server 5.6.x
+#  - https://github.com/TestLinkOpenSourceTRMS/testlink-code
+mysql_root_password: ''
+mysql_root_password_update: 'no'
+mysql_packages:
+  - 'mysql-server-5.6'
+  - 'mysql-client-5.6'
+  - 'python-mysqldb'

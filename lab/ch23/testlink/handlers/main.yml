@@ -1,0 +1,9 @@
+---
+# handlers file for testlink
+
+- name: restart php-fpm
+  service: name=php7.0-fpm enabled=yes state=restarted
+
+- name: restart nginx
+  service: name=nginx enabled=yes state=restarted
+

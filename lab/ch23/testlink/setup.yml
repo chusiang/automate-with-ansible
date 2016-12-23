@@ -1,0 +1,37 @@
+#!/usr/bin/env ansible-playbook
+
+---
+- name: play 'setup testlink'
+  hosts: all
+  become: yes
+
+  vars_files:
+    - defaults/main.yml
+
+  pre_tasks:
+    - name: install necessary apt packages
+      apt: name={{ item }} state=present
+      with_items:
+        - curl
+        - git
+        - make
+
+  roles:
+    - williamyeh.nginx
+    - chusiang.php7
+    - {
+        role: geerlingguy.mysql,
+        mysql_packages: ['mysql-server-5.6', 'mysql-client-5.6','python-mysqldb'],
+      }
+
+  tasks:
+    - name: include main task
+      include: tasks/main.yml
+
+    - name: include check task
+      include: tasks/check.yml
+
+  handlers:
+    - include: handlers/main.yml
+
+# vim:ft=ansible:

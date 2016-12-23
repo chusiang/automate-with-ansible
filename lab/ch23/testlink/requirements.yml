@@ -1,0 +1,8 @@
+- src: williamyeh.nginx
+  path: roles/
+
+- src: chusiang.php7
+  path: roles/
+
+- src: geerlingguy.mysql
+  path: roles/
