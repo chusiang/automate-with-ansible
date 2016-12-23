@@ -8,14 +8,6 @@
   vars_files:
     - defaults/main.yml
 
-  pre_tasks:
-    - name: install necessary apt packages
-      apt: name={{ item }} state=present
-      with_items:
-        - curl
-        - git
-        - make
-
   roles:
     - williamyeh.nginx
     - chusiang.php7
