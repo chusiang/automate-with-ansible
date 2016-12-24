@@ -1,0 +1,16 @@
+# Nginx 1.10  
+- src: williamyeh.nginx
+  path: roles/
+
+# PHP 7
+- src: chusiang.php7
+  path: roles/
+
+# MySQL 5.6
+- src: geerlingguy.mysql
+  path: roles/
+
+# TestLink 1.9.15
+- src: chusiang.testlink
+  path: roles/
+
