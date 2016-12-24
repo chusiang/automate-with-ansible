@@ -3,7 +3,7 @@
 ---
 - name: play 'setup testlink'
   hosts: all
-  become: yes
+  become: true
 
   vars_files:
     - defaults/main.yml

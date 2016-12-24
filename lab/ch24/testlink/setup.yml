@@ -1,0 +1,33 @@
+#!/usr/bin/env ansible-playbook
+
+---
+- name: deploy testlink with chusiang.testlink role
+  hosts: all
+  become: true
+
+  roles:
+    - chusiang.switch-apt-mirror
+    - chusiang.vim-and-vi-mode
+    - williamyeh.nginx
+    - chusiang.php7
+    - {
+        role: geerlingguy.mysql,
+        mysql_packages: ['mysql-server', 'mysql-client','python-mysqldb'],
+        when: "ansible_distribution == 'Debian'"
+      }
+    - {
+        role: geerlingguy.mysql,
+        mysql_packages: ['mysql-server-5.6', 'mysql-client-5.6','python-mysqldb'],
+        when: "ansible_distribution == 'Ubuntu'"
+      }
+    - chusiang.testlink
+
+  tasks:
+      - name: include check task
+      include: roles/chusiang.testlink/tasks/check.yml
+
+  post_tasks:
+    # Run some tests.
+    - include: roles/chusiang.testlink/tests/curl_testlink_web.yml
+
+# vim:ft=ansible:
