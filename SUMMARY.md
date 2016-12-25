@@ -24,4 +24,4 @@
 1. [怎麼用 Roles 部署 LNMP 網頁應用程式？(上)](22.how-to-setup-lnmp-webapp-with-roles-1.md)
 1. [怎麼用 Roles 部署 LNMP 網頁應用程式？(下)](23.how-to-setup-lnmp-webapp-with-roles-2.md)
 1. [怎麼用 Roles 部署 TestLink？](24.how-to-setup-testlink-with-roles.md)
-
+1. [怎麼在 Ansible Galaxy 分享 Roles？(上)](25.how_to_share_roles_on_galaxy-1.md)
