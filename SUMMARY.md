@@ -27,4 +27,4 @@
 1. [怎麼在 Ansible Galaxy 分享 Roles？(上)](25.how_to_share_roles_on_galaxy-1.md)
 1. [怎麼在 Ansible Galaxy 分享 Roles？(下)](26.how_to_share_roles_on_galaxy-2.md)
 1. [怎麼用 Travis CI 測試 Roles？](27.how-to-test-the-roles-with-travis-ci.md)
-1. [怎麼用 Ansible 建置 Docker image？](28.how-to-build-docker-iamge-with-ansible.md)
+1. [怎麼混用 Ansible 建置 Docker image？](28.how-to-build-docker-iamge-with-ansible.md)
