@@ -41,6 +41,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [怎麼在 Ansible Galaxy 分享 Roles？(下)](26.how_to_share_roles_on_galaxy-2.md)
 1. [怎麼用 Travis CI 測試 Roles？](27.how-to-test-the-roles-with-travis-ci.md)
 1. [怎麼混用 Ansible 建置 Docker image？](28.how-to-build-docker-image-with-ansible.md)
+1. [怎麼在 Docker Hub 混用 Ansible 自動建置 Docker image？](29.how-to-build-docker-image-with-ansible-on-docker-hub.md)
 
   > to be continued ...
 
