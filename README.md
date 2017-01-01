@@ -43,7 +43,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 1. [怎麼混用 Ansible 建置 Docker image？](28.how-to-build-docker-image-with-ansible.md)
 1. [怎麼在 Docker Hub 混用 Ansible 自動建置 Docker image？](29.how-to-build-docker-image-with-ansible-on-docker-hub.md)
 1. [怎麼用 Vault 管理敏感資料？](30.how-to-manage-sensitive-data-with-vault.md)
-
+1. [總結](31.end.md)
 
 ## 誌謝
 
