@@ -47,11 +47,15 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 
 ## 誌謝
 
-- William Yeh ([@william_yeh][william_yeh]).
-- Max Huang ([@sakanamax][sakanamax]).
-- [Ansible 台灣使用者社群][ansible-tw] (Ansible Taiwan User Group) 的各位伙伴。
+首先，最感謝的是我的妻子[儀萍](https://github.com/VioletChen)，除了繪製[本書封面](cover.jpg)，在參賽期間還給予了不少支持和照料，要不是有她的督促和校稿凍仁是完成不了本書的。
 
-    > to be continued ...
+謝謝從小在背後默默支持我的雙親陳玉鐘女士和賴松村先生，讓凍仁可以自由的發揮所長，走自己的路。
+
+謝謝我的前主管<u>羅春長 (Shortie)</u> 先生，在 IT 這條漫漫長路上，總是在凍仁遇到難題時指點迷津，並在剛就職時就規劃了往後所需的工作技能，還放手讓凍仁在公司導入 Ansible、Docker 等新技術。
+
+謝謝引領凍仁進入 Ansible 世界的<u>[黃俊宏 (sakanamax)][sakanamax]</u> 和<u>[葉秉哲 (William Yeh)][william_yeh]</u> 前輩，讓凍仁了解到導入組態工具後的世界有多美好。
+
+最後還要謝謝 [Ansible 台灣使用者社群][ansible-tw] (Ansible Taiwan User Group) 和曾幫助過凍仁的各位伙伴，要不是有他們就沒有昔日的凍仁。
 
 
 [^1]: 此為八屆 iT 鐵人賽 [DevOps 組][devops_team]參選作品之一，報名時間為 2016/11/18 02:02:56，並於 2017/02/20 [獲選 DevOps 組冠軍][winner]，其文章將同步發佈於 [GitBook][gitbook] 和 [iT 邦幫忙][ithelp]。
