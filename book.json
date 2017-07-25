@@ -5,7 +5,8 @@
   "plugins": [
     "disqus",
     "ga",
-    "github"
+    "github",
+    "page-toc-button"
   ],
   "pluginsConfig": {
     "disqus": {
@@ -16,6 +17,10 @@
     },
     "github": {
       "url": "https://github.com/chusiang/automate-with-ansible"
+    },
+    "page-toc-button": {
+      "maxTocDepth": 2,
+      "minTocSize": 2
     }
   }
 }
