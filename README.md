@@ -58,7 +58,7 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 最後還要謝謝 [Ansible 台灣使用者社群][ansible-tw] (Ansible Taiwan User Group) 和曾幫助過凍仁的各位伙伴，要不是有他們就沒有昔日的凍仁。
 
 
-[^1]: 此為八屆 iT 鐵人賽 [DevOps 組][devops_team]參選作品之一，報名時間為 2016/11/18 02:02:56，並於 2017/02/20 [獲選 DevOps 組冠軍][winner]，其文章將同步發佈於 [GitBook][gitbook] 和 [iT 邦幫忙][ithelp]。
+[^1]: 此為八屆 iT 鐵人賽 [DevOps 組][devops_team]參選作品之一，報名時間為 2016/11/18 02:02:56，並於 2017/02/20 [獲選 DevOps 組冠軍][winner]，其文章將同步發佈於 [GitBook][gitbook] 和 [iT 邦幫忙][ithelp]，並授權 W3Cschool.cn 轉載至 [Ansible 自动化运维教程](https://www.w3cschool.cn/automate_with_ansible/)。
 
 [^2]: 本書的 GitHub 網址為 [https://github.com/chusiang/automate-with-ansible](https://github.com/chusiang/automate-with-ansible)。
 
