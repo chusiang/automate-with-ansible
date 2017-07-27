@@ -10,6 +10,9 @@ Makefile.target
 # GitBook
 _book/
 node_modules/
+book.epub
+book.mobi
+book.pdf
 
 # macOS
 .DS_Store
