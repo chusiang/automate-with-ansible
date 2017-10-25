@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  gitbook:
+    ports:
+      - 4000:4000/tcp
+      - 35729:35729/tcp
+    volumes:
+      - ./:/srv
+    image: chusiang/gitbook:alpine3.4
+    command:
+      - /srv/loop.sh
+
