@@ -7,7 +7,6 @@ services:
       - 35729:35729/tcp
     volumes:
       - ./:/srv
-    image: chusiang/gitbook:alpine3.4
+    image: chusiang/gitbook:alpine-3.4
     command:
       - /srv/loop.sh
-
