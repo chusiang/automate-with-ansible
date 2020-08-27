@@ -3,12 +3,12 @@
 #  Author: Chu-Siang Lai / chusiang (at) drx.tw
 #  Blog: http://note.drx.tw
 #  Filename: send_notification_to_hipchat.yml
-#  Modified: 2016-12-18 00:30
+#  Modified: 2020-08-27 23:49
 #  Description: Send a notification to HipChat with Ansible.
 #  Reference:
 #
 #   1. hipchat - Send a message to hipchat. | Ansible Documentation
-#    - http://docs.ansible.com/ansible/hipchat_module.html
+#    - https://docs.ansible.com/ansible/latest/modules/hipchat_module.html
 
 # ============================================================
 ---
@@ -29,4 +29,4 @@
         color: gray
         msg: "Send a notification with Ansible !"
 
-# vim: ft=ansible :
+# vim: ft=yaml.ansible :
