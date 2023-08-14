@@ -1,6 +1,6 @@
 # 現代 IT 人一定要知道的 Ansible 自動化組態技巧
 
-[![Markdown](https://img.shields.io/badge/%3C%2F%3E-Markdown-blue.svg)](http://markdown.tw) [![GitBook](https://img.shields.io/badge/GitBook-chusiang%2Fautomate--with--ansible-blue.svg)](https://www.gitbook.com/book/chusiang/automate-with-ansible/) [![License: CC BY-NC-SA 3.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+[![Markdown](https://img.shields.io/badge/%3C%2F%3E-Markdown-white.svg)](http://markdown.tw) [![GitHub](https://img.shields.io/badge/GitHub-chusiang%2Fautomate--with--ansible-black.svg)](https://github.com/chusiang/automate-with-ansible) [![GitBook](https://img.shields.io/badge/GitBook-ansible.drx.tw-blue.svg)](https://ansible.drx.tw) [![License: CC BY-NC-SA 3.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastructure as Code) 工具，其簡單易用的特性讓人愛不釋手，在 DevOps 界更佔有一席之地。
 
@@ -72,6 +72,6 @@ Ansible 是個與 Puppet, SaltStack, Chef 並駕齊驅的組態設定 (Infrastru
 [ansible-tw]: http://ansible.tw/
 [devops_team]: http://ithelp.ithome.com.tw/ironman/signup/list?group=devops
 [winner]: http://ithelp.ithome.com.tw/announces/9
-[gitbook]: https://www.gitbook.com/book/chusiang/automate-with-ansible/details
+[gitbook]: https://ansible.drx.tw
 [ithelp]: http://ithelp.ithome.com.tw/users/20031776/ironman/1022
 
